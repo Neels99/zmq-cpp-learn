@@ -1,0 +1,65 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake
+/cmake-build-debug
+CMakeUserPresets.json
+
+#other
+/.idea
+
+*.pyc
+/build
+/.vscode
+/*_build
+
+#Visual Studio
+/.vs
+/out
+CMakeSettings.json
+doc/concepts/TestIdeaProtocolWithMessages.pdb
+doc/concepts/TestIdeaProtocolWithMessages.ilk
+vc140.pdb
+
+#c2pool
+/logs
+/data
+/legacy
+
+#private configs
+/test/coind_tests/pass.h
+
+#secp256k1 from cmake/ProjectSecp256k1.cmake
+libs/secp256k1/*
+/cmake-build-debug-coverage/
+/cmake-build-release

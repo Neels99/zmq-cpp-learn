@@ -1,0 +1,5 @@
+link_libraries(cppzmq boost::boost)
+add_executable(first_step_client client.cpp)
+add_executable(first_step_server server.cpp)
+add_executable(first_step_client_server client_server.cpp)
+add_executable(first_step_client_server2 client_server2.cpp)

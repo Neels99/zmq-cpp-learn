@@ -1,0 +1,9 @@
+/home/sl33n/repos/zmq-demo/build/CMakeFiles/main.dir
+/home/sl33n/repos/zmq-demo/build/CMakeFiles/edit_cache.dir
+/home/sl33n/repos/zmq-demo/build/CMakeFiles/rebuild_cache.dir
+/home/sl33n/repos/zmq-demo/build/first_step/CMakeFiles/first_step_client.dir
+/home/sl33n/repos/zmq-demo/build/first_step/CMakeFiles/first_step_server.dir
+/home/sl33n/repos/zmq-demo/build/first_step/CMakeFiles/first_step_client_server.dir
+/home/sl33n/repos/zmq-demo/build/first_step/CMakeFiles/first_step_client_server2.dir
+/home/sl33n/repos/zmq-demo/build/first_step/CMakeFiles/edit_cache.dir
+/home/sl33n/repos/zmq-demo/build/first_step/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "first_step",
+					"jsonFile" : "directory-first_step-Debug-798c5df4d53475347f6f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "first_step",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "zmq-demo",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "first_step_client::@9e36d0d3665b2dbd4a3d",
+					"jsonFile" : "target-first_step_client-Debug-8ae4ac4aede4a4db412e.json",
+					"name" : "first_step_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "first_step_client_server::@9e36d0d3665b2dbd4a3d",
+					"jsonFile" : "target-first_step_client_server-Debug-820b1e6faba4f0b0e52e.json",
+					"name" : "first_step_client_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "first_step_client_server2::@9e36d0d3665b2dbd4a3d",
+					"jsonFile" : "target-first_step_client_server2-Debug-7d876d56b9525d7142df.json",
+					"name" : "first_step_client_server2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "first_step_server::@9e36d0d3665b2dbd4a3d",
+					"jsonFile" : "target-first_step_server-Debug-117b76b86eec7d3d19a5.json",
+					"name" : "first_step_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-1b59dbece0e9cdfde9bc.json",
+					"name" : "main",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sl33n/repos/zmq-demo/build",
+		"source" : "/home/sl33n/repos/zmq-demo"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
