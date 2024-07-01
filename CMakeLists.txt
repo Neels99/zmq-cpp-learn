@@ -11,3 +11,4 @@ add_executable(main main.cpp)
 target_link_libraries(main libzmq-static cppzmq)
 
 add_subdirectory(first_step)
+add_subdirectory(try-service1)

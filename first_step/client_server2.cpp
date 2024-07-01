@@ -51,7 +51,7 @@ void client()
     // set up some static data to send
     const std::string data{"Hello"};
 
-    boost::asio::steady_timer t1(io, std::chrono::seconds(65));
+    boost::asio::steady_timer t1(io, std::chrono::seconds(5));
     t1.async_wait(
         [&](const boost::system::error_code& ec)
         {
