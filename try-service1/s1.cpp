@@ -23,15 +23,42 @@ void zmq_thread()
     zmq::context_t context(1);
 
     // Сокет для ответов
-    zmq::socket_t responder(context, ZMQ_REP);
+    zmq::socket_t responder(context, ZMQ_PULL);
     responder.bind("tcp://*:5555");
 
     // Сокет для запросов
-    zmq::socket_t requester(context, ZMQ_REQ);
-    requester.connect("tcp://localhost:5555");
+    zmq::socket_t requester(context, ZMQ_PUB);
+    requester.connect("tcp://localhost:5556");
+
+    zmq::pollitem_t items[] = {
+        { (void*)responder, 0, ZMQ_POLLIN, 0 },
+        { (void*)requester, 0, ZMQ_POLLOUT, 0 }
+    };
+
+    for (;;)
+    {
+        zmq::poll(items, 2, -1);
+
+        if (items[0].revents & ZMQ_POLLIN)
+        {
+            zmq::message_t message;
+            responder.recv(&message);
+            std::cout << "Received message from socket1: " << std::string(static_cast<char*>(message.data()), message.size()) << std::endl;
+        }
+
+        if (items[1].revents & ZMQ_POLLOUT)
+        {
+            std::string message = "Hello from socket2";
+            zmq::message_t zmq_message(message.size());
+            memcpy(zmq_message.data(), message.c_str(), message.size());
+            requester.send(zmq_message);
+            std::cout << "Sent message from socket2: " << message << std::endl;
+        }
+    }
+    
 }
 
-void main()
+int main()
 {
     std::thread zmq_th{zmq_thread};
 
